@@ -31,7 +31,7 @@
     <script>
       // Use jQuery to GET a quote (CORS proxy to bypass MissingAllowOriginHeader error)
       $.get("https://nifty-cors.herokuapp.com/https://inspiration.goprogram.ai", function(data) {
-        $('footer').prepend('<h1>' + data.quote + '</h1>' + '<h1>' + '--' + data.author + '</h1>');
+        $('footer').prepend('<h1>"' + data.quote + '"</h1>' + '<h1>' + '——' + data.author + '</h1>');
       });
     </script>
 
