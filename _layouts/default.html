@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Quote</title>
     <style>
       body {
         text-align: center;
@@ -31,7 +32,7 @@
     <script>
       // Use jQuery to GET a quote (CORS proxy to bypass MissingAllowOriginHeader error)
       $.get("https://nifty-cors.herokuapp.com/https://inspiration.goprogram.ai", function(data) {
-        $('footer').prepend('<h1>"' + data.quote + '"</h1>' + '<h1>' + '——' + data.author + '</h1>');
+        $('footer').prepend('<h1>"' + data.quote + '"</h1>' + '<h1>' + '—' + data.author + '</h1>');
       });
     </script>
 
